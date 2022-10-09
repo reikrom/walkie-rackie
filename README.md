@@ -1,63 +1,10 @@
 # Pumpkinseed starter project 
-Things used with configs
-* React
-* typescript
-* jest
-* eslint
-* prettier
-* tailwindcss
-* clsx
-* husky / pre-commit
 
-## Folder structure
-```
-Project
-|   README.md
-|   ...configs
-|
-└───src
-|   |   index.tsx
-|   |
-|   └───components
-|   |   |   Component1.tsx
-|   |   |   Component2.tsx
-|   |   |   ...
-|   |   └───hooks
-|   |   |   |   Hook1.tsx
-|   |   |   |   Hook2.tsx
-|   |   |   |   ...
-|   |   └───icons
-|   |   |   |   icon1.tsx
-|   |   |   |   icon2.tsx
-|   |   |   |   ...
-|   |   └───sections
-|   |       |   sectionComponentGroup1.tsx
-|   |       |   sectionComponentGroup2.tsx
-|   |
-|   |
-|   └───routes
-|   |   index.tsx
-|   |   PageComponent1.tsx
-|   |   PageComponent2.tsx
-|   |   ...
-|   └───styles
-|   |   ...css
-|   |
-|   └───utils
-|   |   util1.ts
-|   |   util2.ts
-|
-└───other
-|   README.md
-|   config1
-|   config2
-└───tests
-└───types
-```
+## Mini animation project using useRequestAnimation hook and react.
+Assets from - https://arks.itch.io/dino-characters @ScissorMarks
 
+code ref used - [colorsofcode](https://github.com/colorsofcode/javascript-game-development-css-amimation)
 
-### TODO
-* cssnano
-* postcss
-* autoprefixer
-* tests
+### [DEMO](https://codesandbox.io/p/github/reikrom/walkie-rackie/draft/loving-wood?file=%2FREADME.md)
+
+![image](https://user-images.githubusercontent.com/44064758/194764614-f9e88167-8991-4f3e-a528-cf164234e215.png)
