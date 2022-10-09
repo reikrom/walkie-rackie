@@ -1,0 +1,52 @@
+:root {
+  --sprite-size: 100px;
+  --sprite-frames: 4;
+  --sprite-duration: 150ms;
+}
+
+img {
+  height: var(--sprite-size); /* have to override tailwind */
+}
+
+.dino {
+  display: inline-block;
+  position: realtive;
+  overflow: hidden;
+  width: var(--sprite-size);
+  height: var(--sprite-size);
+}
+.dino .sprite {
+  max-width: unset;
+  position: absolute;
+  image-rendering: pixelated;
+}
+
+.dino[data-animation-state='idle'] .sprite {
+  animation: idleAnimation calc(var(--sprite-frames) * var(--sprite-duration))
+    infinite steps(var(--sprite-frames)) forwards;
+}
+
+.dino[data-animation-state='running'] .sprite {
+  animation: runningAnimation
+    calc(var(--sprite-frames) * var(--sprite-duration)) infinite
+    steps(var(--sprite-frames)) forwards;
+}
+
+@keyframes idleAnimation {
+  from {
+    object-position: 0;
+  }
+
+  to {
+    object-position: -400px;
+  }
+}
+@keyframes runningAnimation {
+  from {
+    object-position: -2000px;
+  }
+
+  to {
+    object-position: -2400px;
+  }
+}

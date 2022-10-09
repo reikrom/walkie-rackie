@@ -1,0 +1,25 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
+@tailwind screens;
+
+/* // font 1 */
+/* @font-face {
+  font-family: 'xxx';
+  src: url('/fonts/xxx-Medium.woff2') format('woff2'),
+  url('/fonts/xxx-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+} */
+/* // font 2 */
+/* ... */
+
+@layer utilities { 
+  .bg-primary {
+    @apply bg-black text-white
+  }
+}

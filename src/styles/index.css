@@ -1,0 +1,23 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 90vh;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: black !important;
+  -webkit-box-shadow: 0 0 0 999px var(--color-gray-100) inset !important;
+  box-shadow: 0 0 0 999px var(--color-gray-100) inset !important;
+  background-clip: content-box !important;
+}
